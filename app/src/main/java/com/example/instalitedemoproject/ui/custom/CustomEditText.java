@@ -1,4 +1,4 @@
-package com.example.instalitedemoproject.utils;
+package com.example.instalitedemoproject.ui.custom;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -7,8 +7,8 @@ import androidx.appcompat.widget.AppCompatEditText;
 
 import com.example.instalitedemoproject.R;
 
-public class EditTextCustom extends AppCompatEditText{
-    public EditTextCustom (Context context, AttributeSet atrrs) {
+public class CustomEditText extends AppCompatEditText{
+    public CustomEditText(Context context, AttributeSet atrrs) {
         super (context, atrrs);
         init();
     }

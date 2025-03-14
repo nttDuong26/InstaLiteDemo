@@ -1,4 +1,4 @@
-package com.example.instalitedemoproject.uis;
+package com.example.instalitedemoproject.ui.login;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +10,7 @@ import androidx.lifecycle.ViewModelProvider;
 import com.example.instalitedemoproject.auth.AuthViewModel;
 import com.example.instalitedemoproject.MainActivity;
 import com.example.instalitedemoproject.R;
+import com.example.instalitedemoproject.ui.register.RegisterActivity;
 
 public class LoginActivity extends AppCompatActivity {
     private AuthViewModel authViewModel;

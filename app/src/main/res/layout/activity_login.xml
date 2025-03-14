@@ -1,33 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
     android:orientation="vertical">
 
-    <com.example.instalitedemoproject.utils.EditTextCustom
+    <com.example.instalitedemoproject.ui.custom.CustomEditText
         android:id="@+id/etEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Nhập email của bạn"
         android:inputType="textEmailAddress"/>
 
-    <com.example.instalitedemoproject.utils.EditTextCustom
+    <com.example.instalitedemoproject.ui.custom.CustomEditText
         android:id="@+id/etPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password"
         android:inputType="textPassword" />
 
-    <Button
+    <!-- Nút Đăng nhập -->
+    <com.example.instalitedemoproject.ui.custom.CustomButton
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Đăng nhập" />
+        android:text="Đăng nhập"
+        app:btnBackgroundColor="@color/primary_color"
+        app:btnTextColor="@android:color/white"
+        android:layout_marginTop="@dimen/spacing_medium"/>
 
-    <Button
+    <!-- Nút Tạo tài khoản: Nền trắng, viền xanh, chữ xanh -->
+    <com.example.instalitedemoproject.ui.custom.CustomButton
         android:id="@+id/btnGoToRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tạo tài khoản mới" />
+        android:text="Tạo tài khoản mới"
+        app:btnBackgroundColor="@android:color/white"
+        app:btnTextColor="@color/primary_color"
+        app:btnBorderColor="@color/primary_color"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:layout_marginBottom="@dimen/spacing_large"/>
 </LinearLayout>
